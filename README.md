@@ -1,1 +1,1 @@
-This is my first time using git
+This is my first time with git
