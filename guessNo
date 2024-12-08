@@ -1,0 +1,18 @@
+import random
+maxAtmpt = 7
+print(f"Welcome to the Number Guessing Game\nYou have {maxAtmpt} lifes")
+actNo = random.randint(1,100)
+print("Guess the Number between 1 and 100")
+noatempt = 0
+while noatempt<maxAtmpt:
+    #print(actNo)
+    noatempt += 1
+    gusNo = int(input())
+    if actNo == gusNo:
+        print(f"Congratulations!! you have gueessed it right in {noatempt} attempt")
+        break
+    elif actNo < gusNo:
+        print(f"Sorry! You have guessed a big number, {maxAtmpt - noatempt} attempts left!")
+    else:
+        print(f"Sorry!! You have guessed a small number, {maxAtmpt - noatempt} attempts left!")
+
